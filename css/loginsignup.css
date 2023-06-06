@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-image: url("/pexels-edward-jenner-4253056.jpg"); */
+  }
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar,
+  .sidebarleft {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sidebarleft {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  .sidebar{
+    flex-direction: column;
+    font-size: 30px;
+    color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    background-image: url(/img/pexels-edward-jenner-4253056.jpg);
+  }
+  
+  .loginForm {
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #ffb300;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type= "text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  input[type="submit"] {
+    background-color: #46b4c1;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #7ccdff;
+  }
+  .link-style {
+    text-decoration: none;
+    color: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  

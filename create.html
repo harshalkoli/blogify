@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Post - Blogify</title>
+    <link rel="stylesheet" type="text/css" href="/css/create.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <link
+      rel="shortcut icon"
+      href="/img/icons8-blogger-32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="headLogo">
+          <img src="/img/icons8-blogger-64.png" alt="logo" />
+          <a class="link-style" href="index.html"><h1>Blogify</h1></a>
+        </div>
+        <nav>
+          <ul class="hidden-links" id="navbar">
+            <div>
+              <li><a href="index.html">Home</a></li>
+            </div>
+            <li><a href="#" id="logout-button">Log Out</a></li>
+            <li><span id="username-label" class="username"></span></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="content">
+          <h2>Create a New Blog Post</h2>
+          <form id="createPostForm">
+            <label for="postTitle">Title:</label>
+            <input type="text" id="postTitle" name="postTitle" required />
+
+            <label for="postContent">Content:</label>
+            <textarea
+              id="postContent"
+              name="postContent"
+              rows="10"
+              required
+            ></textarea>
+
+            <button type="submit">Publish</button>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2023 Blogify. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="/js/config.js"></script>
+    <script src="/js/create.js"></script>
+  </body>
+</html>

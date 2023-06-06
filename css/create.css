@@ -1,0 +1,241 @@
+/* Add your custom styles here */
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  background-color: #ffb300;
+  color: #fff;
+}
+nav{
+  background-color: #46b4c1;
+  height: 25px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li + li {
+  margin-left: 10px;
+}
+
+nav ul :first-child {
+  margin-right: auto;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+footer {
+  background-color: #ffb300;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+#content {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#content h2 {
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+#createPostForm {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+#createPostForm label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#createPostForm input,
+#createPostForm textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+#createPostForm button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#createPostForm button:hover {
+  background-color: #555;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.username {
+  margin-right: 0px; 
+}
+
+#logout-button {
+  margin-right: 10px;
+}
+
+.hidden-links {
+  display: none; 
+}
+
+/* styling for the posts */
+.post {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  width: 80%;
+}
+
+.post-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.post-author {
+  font-size: 14px;
+  color: #ff8624;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  font-size: 16px;
+  border: 1px solid #afafaf;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.post-date {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Styles for Like Button */
+/* Styles for Like Button */
+.like-button {
+  padding: 5px 10px;
+  background-color: #ffffff;
+  color: #ff0000;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 15px; /* Increase the font size to accommodate the symbol */
+}
+
+.like-button:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+.like-button::before {
+  content: "\2764"; /* Unicode character for a heart symbol */
+}
+
+
+/* Styles for Like Count */
+.like-count {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+/* Styles for Comment Section */
+.comment-section {
+  margin-top: 10px;
+}
+
+.comment {
+  margin-bottom: 5px;
+}
+
+.comment:before {
+  content: "\2022";
+  margin-right: 5px;
+}
+
+.comment-form {
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.comment-form input[type="text"] {
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+
+.comment-form button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.comment-form button[type="submit"]:hover {
+  background-color: #555;
+}
+.link-style {
+  text-decoration: none;
+  color: inherit;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+.headLogo{
+  display: flex;
+  flex-direction: row;
+  margin: 0 10px 0 10px;
+}
+img{
+  margin-right: 20px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blogify | Signup Page</title>
+    <link rel="stylesheet" href="/css/loginsignup.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <link
+    rel="shortcut icon"
+    href="/img/icons8-blogger-32.png"
+    type="image/x-icon"
+  />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <img src="/img/icons8-blogger-64.png" alt="logo">
+        <a class="link-style" href="index.html"><h1>Blogify</h1></a>
+      </div>
+      <div class="sidebarleft">
+        <div class="loginForm">
+          <h2>Sign Up</h2>
+          <form id="signup-form" action="/login.html" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+
+            <input type="submit" value="Sign Up" />
+            <p>already have an account?<br /><a href="login.html">login</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="/js/config.js"></script>
+    <script src="/js/signup.js"></script>
+  </body>
+</html>
